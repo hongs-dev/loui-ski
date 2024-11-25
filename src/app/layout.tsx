@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Testimonial from "@/components/testimonial";
+import BookingProcess from "@/components/booking";
+import PriceSection from "@/components/prices";
 
 export const metadata: Metadata = {
   title: "루이스키",
@@ -13,7 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={`antialiased`}>{children}</body>
+      <body className={`antialiased relative`}>
+        {children}
+        <Testimonial />
+        <BookingProcess />
+        <PriceSection />
+      </body>
     </html>
   );
 }
