@@ -1,20 +1,11 @@
-import HeroSection from "@/components/hero-section";
-import { MAIN_BG_URL } from "@/constants/ImageUrls";
-import Image from "next/image";
+import MainImage from "@/components/main-bg";
+import HeroSection from "@/components/sections/hero-section";
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-2 min-h-screen">
+    <div className="grid grid-cols-1 lg:grid-cols-2 h-screen">
       <HeroSection />
-      <section className="col-span-1">
-        <Image
-          src={MAIN_BG_URL}
-          width={4032}
-          height={3024}
-          alt="main-bg"
-          className="h-full object-cover"
-        />
-      </section>
+      <MainImage />
     </div>
   );
 }
