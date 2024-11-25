@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../navbar";
-import { HERO, Services } from "@/constants/Contents";
+import { HERO, MainCards, Services } from "@/constants/Contents";
 import { VIEW_IMAGES } from "@/constants/ImageUrls";
 import Image from "next/image";
 import { CircleCheck } from "lucide-react";
@@ -8,6 +8,12 @@ import { Button } from "@/components/ui/button";
 import { SiNaver } from "react-icons/si";
 import { IoCall } from "react-icons/io5";
 import Link from "next/link";
+// import {
+//   Card,
+//   CardDescription,
+//   CardHeader,
+//   CardTitle,
+// } from "@/components/ui/card";
 
 const HeroSection = () => {
   const formattedHeading = HERO.heading.split("\n").map((line, index) => (
@@ -19,9 +25,25 @@ const HeroSection = () => {
   return (
     <div className="p-5 col-span-1">
       <Navbar />
+      {/* <div className="flex justify-between items-center lg:gap-3 flex-col gap-1 lg:flex-row">
+        {MainCards.map((card, idx) => (
+          <Card
+            key={idx}
+            className="w-full h-30 bg-[#f4fbf5] border-neutral-200 mb-4"
+          >
+            <CardHeader className="px-4 py-2">
+              <CardDescription>{card.main}</CardDescription>
+              <CardTitle className="text-[#f61862] text-sm">
+                {card.title}
+              </CardTitle>
+            </CardHeader>
+          </Card>
+        ))}
+      </div> */}
       <h1 className="text-4xl lg:text-7xl font-bold text-neutral-800 tracking-tight">
         {formattedHeading}
       </h1>
+
       <ul className="mt-5 lg:mt-10 space-y-3">
         {Services.map((service, idx) => (
           <li key={idx} className="flex items-center gap-2">
@@ -31,7 +53,7 @@ const HeroSection = () => {
         ))}
       </ul>
 
-      <div className="w-full mt-8 lg:mt-24">
+      <div className="w-full mt-8 lg:mt-10">
         <Button className="bg-[#00DE5A] text-neutral-800 font-medium hover:bg-[#009E40] w-full py-6">
           <Link
             href="https://smartstore.naver.com/loui_ski/products/11132264287"
@@ -39,7 +61,7 @@ const HeroSection = () => {
             className="flex justify-center items-center"
           >
             <SiNaver className="mr-2" />
-            네이버로 예약하기
+            네이버로 예약하기(이벤트 진행중!)
           </Link>
         </Button>
         <Button className=" w-full py-6 mt-3" variant="outline">
