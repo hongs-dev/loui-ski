@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../navbar";
-import { HERO, MainCards, Services } from "@/constants/Contents";
+import { HERO, Services } from "@/constants/Contents";
 import { VIEW_IMAGES } from "@/constants/ImageUrls";
 import Image from "next/image";
 import { CircleCheck } from "lucide-react";
