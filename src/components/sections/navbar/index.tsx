@@ -15,9 +15,9 @@ const Navbar = () => {
           width={1000}
           height={1000}
           alt="logo"
-          className="size-16"
+          className="size-8 lg:size-16"
         />
-        <p className="text-xl font-bold">루이스키</p>
+        <p className="text-lg lg:text-xl font-bold">루이스키</p>
       </div>
       <div className="flex items-center justify-center gap-3">
         <Button variant="outline" size="icon" className="rounded-full">
@@ -25,7 +25,7 @@ const Navbar = () => {
             <BsInstagram size={32} />
           </Link>
         </Button>
-        <p>@loui_ski2</p>
+        <p className="text-sm">@loui_ski2</p>
       </div>
     </nav>
   );

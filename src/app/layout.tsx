@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body
-        className={`antialiased relative ${noto.className} bg-gradient-to-r from-[#F6FBFE] to-[#E4F2FB]`}
+        className={`antialiased relative ${noto.className} bg-gradient-to-br lg:bg-gradient-to-r from-[#F6FBFE] to-[#E4F2FB]`}
       >
         {children}
         <SideFloat />

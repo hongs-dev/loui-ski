@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const SideFloat = () => {
   return (
-    <div className="fixed right-10 bottom-10 z-50">
+    <div className="fixed right-2 bottom-2 lg:right-10 lg:bottom-10 z-50">
       <div className="flex flex-col gap-4">
         <TooltipProvider>
           {SIDE_FLOATS.map((sideFloat) => (
