@@ -4,6 +4,7 @@ import "./globals.css";
 // import BookingProcess from "@/components/sections/booking";
 // import PriceSection from "@/components/sections/prices";
 import { Noto_Sans_KR } from "next/font/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import SideFloat from "@/components/side-float";
 
 export const metadata: Metadata = {
@@ -28,6 +29,7 @@ export default function RootLayout({
       >
         {children}
         <SideFloat />
+        <GoogleTagManager gtmId="G-GZK0WN0R05" />
         {/* <Testimonial />
         <BookingProcess />
         <PriceSection /> */}
